@@ -1,0 +1,318 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\models\\viewmodels\\listviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\models\\viewmodels\\listviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\models\\viewmodels\\paginginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\models\\viewmodels\\paginginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\models\\efbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\models\\efbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\models\\ibookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\models\\ibookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\models\\bookingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\models\\bookingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\global.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\global.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\migrations\\bookingdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\migrations\\bookingdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\asp labs\\bookingsln\\bookinghotel\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8DBA3BA-E87C-44D5-B6B7-A253C1D923BF}|BookingHotel\\BookingHotel.csproj|solutionrelative:bookinghotel\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BookingHotel\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BookingHotel\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T04:58:54.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookingHotel\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BookingHotel\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T04:59:59.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListViewModel.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\ViewModels\\ListViewModel.cs",
+              "RelativeDocumentMoniker": "BookingHotel\\Models\\ViewModels\\ListViewModel.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\ViewModels\\ListViewModel.cs",
+              "RelativeToolTip": "BookingHotel\\Models\\ViewModels\\ListViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T01:26:56.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BookingHotel\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BookingHotel\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T04:57:58.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EFBookingRepository.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\EFBookingRepository.cs",
+              "RelativeDocumentMoniker": "BookingHotel\\Models\\EFBookingRepository.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\EFBookingRepository.cs",
+              "RelativeToolTip": "BookingHotel\\Models\\EFBookingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T05:29:07.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBookingRepository.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\IBookingRepository.cs",
+              "RelativeDocumentMoniker": "BookingHotel\\Models\\IBookingRepository.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\IBookingRepository.cs",
+              "RelativeToolTip": "BookingHotel\\Models\\IBookingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T05:27:43.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PagingInfo.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\ViewModels\\PagingInfo.cs",
+              "RelativeDocumentMoniker": "BookingHotel\\Models\\ViewModels\\PagingInfo.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\ViewModels\\PagingInfo.cs",
+              "RelativeToolTip": "BookingHotel\\Models\\ViewModels\\PagingInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T01:21:02.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Program.cs",
+              "RelativeDocumentMoniker": "BookingHotel\\Program.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Program.cs",
+              "RelativeToolTip": "BookingHotel\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAASwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T04:38:34.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\appsettings.json",
+              "RelativeDocumentMoniker": "BookingHotel\\appsettings.json",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\appsettings.json",
+              "RelativeToolTip": "BookingHotel\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-22T05:18:02.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\SeedData.cs",
+              "RelativeDocumentMoniker": "BookingHotel\\Models\\SeedData.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\SeedData.cs",
+              "RelativeToolTip": "BookingHotel\\Models\\SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T05:43:25.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Room.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "BookingHotel\\Models\\Room.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\Room.cs",
+              "RelativeToolTip": "BookingHotel\\Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T05:00:47.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookingDbContext.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\BookingDbContext.cs",
+              "RelativeDocumentMoniker": "BookingHotel\\Models\\BookingDbContext.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Models\\BookingDbContext.cs",
+              "RelativeToolTip": "BookingHotel\\Models\\BookingDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T05:20:08.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "BookingHotel\\Views\\_ViewImports.cshtml",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "BookingHotel\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T04:55:35.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "global.json",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\global.json",
+              "RelativeDocumentMoniker": "BookingHotel\\global.json",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\global.json",
+              "RelativeToolTip": "BookingHotel\\global.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-22T06:02:44.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BookingHotel\\appsettings.Development.json",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\appsettings.Development.json",
+              "RelativeToolTip": "BookingHotel\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-22T06:02:40.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "BookingHotel\\Views\\_ViewStart.cshtml",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "BookingHotel\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T04:57:26.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BookingDbContextModelSnapshot.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Migrations\\BookingDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "BookingHotel\\Migrations\\BookingDbContextModelSnapshot.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Migrations\\BookingDbContextModelSnapshot.cs",
+              "RelativeToolTip": "BookingHotel\\Migrations\\BookingDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T05:55:03.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BookingHotel\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\ASP labs\\BookingSln\\BookingHotel\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BookingHotel\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-22T04:36:37.722Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
