@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Навчання\\ASP labs\\BookingSln\\BookingHotel\\BookingHotel.csproj": {}
+    "E:\\Навчання\\ASP labs\\BookingSln 4\\BookingHotel\\BookingHotel.csproj": {}
   },
   "projects": {
-    "E:\\Навчання\\ASP labs\\BookingSln\\BookingHotel\\BookingHotel.csproj": {
+    "E:\\Навчання\\ASP labs\\BookingSln 4\\BookingHotel\\BookingHotel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Навчання\\ASP labs\\BookingSln\\BookingHotel\\BookingHotel.csproj",
+        "projectUniqueName": "E:\\Навчання\\ASP labs\\BookingSln 4\\BookingHotel\\BookingHotel.csproj",
         "projectName": "BookingHotel",
-        "projectPath": "E:\\Навчання\\ASP labs\\BookingSln\\BookingHotel\\BookingHotel.csproj",
+        "projectPath": "E:\\Навчання\\ASP labs\\BookingSln 4\\BookingHotel\\BookingHotel.csproj",
         "packagesPath": "C:\\Users\\vonso\\.nuget\\packages\\",
-        "outputPath": "E:\\Навчання\\ASP labs\\BookingSln\\BookingHotel\\obj\\",
+        "outputPath": "E:\\Навчання\\ASP labs\\BookingSln 4\\BookingHotel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
