@@ -1,54 +1,42 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using static System.Net.Mime.MediaTypeNames;
 
 
 namespace BookingHotel.Models
 {
-    public class SeedData
+    public static class SeedData
     {
-        public static void EnsurePopulated(IApplicationBuilder app)
+        public static async Task InitializeRolesAndAdmin(IServiceProvider serviceProvider)
         {
-            BookingDbContext context = app.ApplicationServices
-                .CreateScope().ServiceProvider
-                .GetRequiredService<BookingDbContext>();
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var userManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
 
-            if (context.Database.GetPendingMigrations().Any())
+            string[] roleNames = { "Admin", "User" };
+
+            foreach (var roleName in roleNames)
             {
-                context.Database.Migrate();
+                var roleExist = await roleManager.RoleExistsAsync(roleName);
+                if (!roleExist)
+                {
+                    await roleManager.CreateAsync(new IdentityRole(roleName));
+                }
             }
 
-            if (!context.Rooms.Any())
+            var adminEmail = "admin@example.com";
+            var adminUser = await userManager.FindByEmailAsync(adminEmail);
+            if (adminUser == null)
             {
-                context.Rooms.AddRange(
-                new Room
+                var admin = new IdentityUser
                 {
-                    Number = "101",
-                    Description = "Broken shower",
-                    Price = 275,
-                    Class = "Lux"
-                },
-                new Room
+                    UserName = adminEmail,
+                    Email = adminEmail
+                };
+                var result = await userManager.CreateAsync(admin, "Admin123!");
+                if (result.Succeeded)
                 {
-                    Number = "101a",
-                    Description = "No description",
-                    Price = 150,
-                    Class = "Normal"
-                },
-                new Room
-                {
-                    Number = "230",
-                    Description = "Broken TV",
-                    Price = 100,
-                    Class = "Cheap"
-                },
-                new Room
-                {
-                    Number = "134",
-                    Description = "No description",
-                    Price = 400,
-                    Class = "Super Lux"
-                });
-                context.SaveChanges();
+                    await userManager.AddToRoleAsync(admin, "Admin");
+                }
             }
         }
     }

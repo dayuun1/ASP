@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BookingHotel.Models;
 using BookingHotel.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookingHotel.Controllers
 {
@@ -12,7 +13,7 @@ namespace BookingHotel.Controllers
             {
                 repository = repo;
             }
-
+        [Authorize]
         public IActionResult Index(string roomClass, int page = 1)
         {
             var filteredRooms = repository.Rooms
@@ -36,19 +37,21 @@ namespace BookingHotel.Controllers
 
             return View(model);
         }
+        [Authorize(Roles = "Admin")]
         public IActionResult Details(long id)
         {
             var room = repository.Rooms.FirstOrDefault(r => r.RoomID == id);
             if (room == null) return NotFound();
             return View(room);
         }
-
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create(Room room)
         {
             if (ModelState.IsValid)
@@ -58,7 +61,7 @@ namespace BookingHotel.Controllers
             }
             return View(room);
         }
-
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(long id)
         {
             var room = repository.Rooms.FirstOrDefault(r => r.RoomID == id);
@@ -68,6 +71,7 @@ namespace BookingHotel.Controllers
 
         [HttpPost]
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(Room room)
         {
             if (ModelState.IsValid)
@@ -86,7 +90,7 @@ namespace BookingHotel.Controllers
 
             return View(room);
         }
-
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(long id)
         {
             var room = repository.Rooms.FirstOrDefault(r => r.RoomID == id);
@@ -95,6 +99,7 @@ namespace BookingHotel.Controllers
         }
 
         [HttpPost, ActionName("Delete")]
+        [Authorize(Roles = "Admin")]
         public IActionResult DeleteConfirmed(long id)
         {
             var room = repository.Rooms.FirstOrDefault(r => r.RoomID == id);

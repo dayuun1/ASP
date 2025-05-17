@@ -510,4 +510,5 @@ E:\Навчання\ASP labs\BookingSln 4\BookingHotel\obj\Debug\net8.0\refint\B
 E:\Навчання\ASP labs\BookingSln 4\BookingHotel\obj\Debug\net8.0\BookingHotel.pdb
 E:\Навчання\ASP labs\BookingSln 4\BookingHotel\obj\Debug\net8.0\BookingHotel.genruntimeconfig.cache
 E:\Навчання\ASP labs\BookingSln 4\BookingHotel\obj\Debug\net8.0\ref\BookingHotel.dll
+E:\Навчання\ASP labs\BookingSln 4\BookingHotel\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\Навчання\ASP labs\BookingSln 4\BookingHotel\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
