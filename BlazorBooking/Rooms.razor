@@ -1,0 +1,249 @@
+﻿@page "/bookings"
+@using BookingHotel.Models
+@using BlazorClient.Services
+@inject IBookingService BookingService
+@inject IRoomService RoomService
+@inject IJSRuntime JSRuntime
+@attribute [Authorize]
+
+<PageTitle>Управління бронюваннями</PageTitle>
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Управління бронюваннями</h1>
+    <button class="btn btn-primary" @onclick="ShowCreateForm">
+        <i class="bi bi-plus-circle"></i> Додати бронювання
+    </button>
+</div>
+
+@if (loading)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Завантаження...</span>
+        </div>
+    </div>
+}
+else if (bookings?.Any() == true)
+{
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Гість</th>
+                    <th>Кімната</th>
+                    <th>Дата заїзду</th>
+                    <th>Дата виїзду</th>
+                    <th>Кількість днів</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var booking in bookings)
+                {
+                    <tr>
+                        <td>@booking.GuestName</td>
+                        <td>@booking.Room?.Number</td>
+                        <td>@booking.DateFrom.ToString("dd.MM.yyyy")</td>
+                        <td>@booking.DateTo.ToString("dd.MM.yyyy")</td>
+                        <td>@((booking.DateTo - booking.DateFrom).Days) днів</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary me-2" @onclick="() => ShowEditForm(booking)">
+                                <i class="bi bi-pencil"></i> Редагувати
+                            </button>
+                            <button class="btn btn-sm btn-outline-danger" @onclick="() => DeleteBooking(booking.BookingID)">
+                                <i class="bi bi-trash"></i> Видалити
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="alert alert-info">
+        <i class="bi bi-info-circle"></i> Бронювань не знайдено. Додайте перше бронювання.
+    </div>
+}
+
+@if (showForm)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@(editingBooking?.BookingID > 0 ? "Редагувати бронювання" : "Додати бронювання")</h5>
+                    <button type="button" class="btn-close" @onclick="HideForm"></button>
+                </div>
+                <div class="modal-body">
+                    <EditForm Model="currentBooking" OnValidSubmit="SaveBooking">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary class="text-danger" />
+
+                        <div class="mb-3">
+                            <label class="form-label">Ім'я гостя:</label>
+                            <InputText @bind-Value="currentBooking.GuestName" class="form-control" />
+                            <ValidationMessage For="() => currentBooking.GuestName" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Кімната:</label>
+                            <InputSelect @bind-Value="currentBooking.RoomID" class="form-select">
+                                <option value="0">Виберіть кімнату</option>
+                                @if (availableRooms != null)
+                                {
+                                    @foreach (var room in availableRooms)
+                                    {
+                                        <option value="@room.RoomID">@room.Number - @room.Class (@room.Price.ToString("C"))</option>
+                                    }
+                                }
+                            </InputSelect>
+                            <ValidationMessage For="() => currentBooking.RoomID" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Дата заїзду:</label>
+                            <InputDate @bind-Value="currentBooking.DateFrom" class="form-control" />
+                            <ValidationMessage For="() => currentBooking.DateFrom" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Дата виїзду:</label>
+                            <InputDate @bind-Value="currentBooking.DateTo" class="form-control" />
+                            <ValidationMessage For="() => currentBooking.DateTo" />
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" @onclick="HideForm">Скасувати</button>
+                            <button type="submit" class="btn btn-primary" disabled="@saving">
+                                @if (saving)
+                                {
+                                    <span class="spinner-border spinner-border-sm me-2"></span>
+                                }
+                                Зберегти
+                            </button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<Booking>? bookings;
+    private List<Room>? availableRooms;
+    private Booking currentBooking = new();
+    private Booking? editingBooking;
+    private bool loading = true;
+    private bool showForm = false;
+    private bool saving = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadBookings();
+        await LoadAvailableRooms();
+    }
+
+    private async Task LoadBookings()
+    {
+        loading = true;
+        try
+        {
+            bookings = await BookingService.GetBookingsAsync();
+        }
+        finally
+        {
+            loading = false;
+        }
+    }
+
+    private async Task LoadAvailableRooms()
+    {
+        availableRooms = await RoomService.GetRoomsAsync();
+    }
+
+    private async Task ShowCreateForm()
+    {
+        currentBooking = new Booking
+        {
+            DateFrom = DateTime.Today,
+            DateTo = DateTime.Today.AddDays(1)
+        };
+        editingBooking = null;
+        showForm = true;
+    }
+
+    private void ShowEditForm(Booking booking)
+    {
+        editingBooking = booking;
+        currentBooking = new Booking
+        {
+            BookingID = booking.BookingID,
+            GuestName = booking.GuestName,
+            DateFrom = booking.DateFrom,
+            DateTo = booking.DateTo,
+            RoomID = booking.RoomID
+        };
+        showForm = true;
+    }
+
+    private void HideForm()
+    {
+        showForm = false;
+        currentBooking = new();
+        editingBooking = null;
+    }
+
+    private async Task SaveBooking()
+    {
+        saving = true;
+        try
+        {
+            bool success;
+            if (editingBooking?.BookingID > 0)
+            {
+                success = await BookingService.UpdateBookingAsync(editingBooking.BookingID, currentBooking);
+            }
+            else
+            {
+                success = await BookingService.CreateBookingAsync(currentBooking);
+            }
+
+            if (success)
+            {
+                await LoadBookings();
+                HideForm();
+                await JSRuntime.InvokeVoidAsync("alert", 
+                    editingBooking?.BookingID > 0 ? "Бронювання успішно оновлено!" : "Бронювання успішно створено!");
+            }
+            else
+            {
+                await JSRuntime.InvokeVoidAsync("alert", "Помилка збереження бронювання!");
+            }
+        }
+        finally
+        {
+            saving = false;
+        }
+    }
+
+    private async Task DeleteBooking(long bookingId)
+    {
+        var confirmed = await JSRuntime.InvokeAsync<bool>("confirm", "Ви впевнені, що хочете видалити це бронювання?");
+        if (confirmed)
+        {
+            var success = await BookingService.DeleteBookingAsync(bookingId);
+            if (success)
+            {
+                await LoadBookings();
+                await JSRuntime.InvokeVoidAsync("alert", "Бронювання успішно видалено!");
+            }
+            else
+            {
+                await JSRuntime.InvokeVoidAsync("alert", "Помилка видалення бронювання!");
+            }
+        }
+    }
+}

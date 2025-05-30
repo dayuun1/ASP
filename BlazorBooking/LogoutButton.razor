@@ -1,0 +1,41 @@
+﻿@using BlazorClient.Services
+@inject IAuthService AuthService
+@inject NavigationManager Navigation
+@inject AuthenticationStateProvider AuthStateProvider
+
+<AuthorizeView>
+    <Authorized>
+        <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <i class="bi bi-person-circle"></i> @context.User.Identity?.Name
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/profile"><i class="bi bi-person"></i> Профіль</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><button class="dropdown-item" @onclick="HandleLogout"><i class="bi bi-box-arrow-right"></i> Вийти</button></li>
+            </ul>
+        </div>
+    </Authorized>
+    <NotAuthorized>
+        <a href="/login" class="btn btn-outline-light me-2">
+            <i class="bi bi-box-arrow-in-right"></i> Увійти
+        </a>
+        <a href="/register" class="btn btn-primary">
+            <i class="bi bi-person-plus"></i> Реєстрація
+        </a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private async Task HandleLogout()
+    {
+        await AuthService.Logout();
+        
+        if (AuthStateProvider is CustomAuthStateProvider customProvider)
+        {
+            customProvider.MarkUserAsLoggedOut();
+        }
+        
+        Navigation.NavigateTo("/", forceLoad: true);
+    }
+}

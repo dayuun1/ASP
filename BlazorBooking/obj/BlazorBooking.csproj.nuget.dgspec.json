@@ -53,29 +53,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Components.WebAssembly": {
-              "target": "Package",
-              "version": "[8.0.15, )"
-            },
-            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.15, )"
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.15, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.Sdk.WebAssembly.Pack": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.4, )",
-              "autoReferenced": true
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -87,17 +64,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.15, 8.0.15]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       },
